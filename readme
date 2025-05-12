@@ -1,0 +1,62 @@
+Este projeto é um sistema simples em PHP para cadastrar filmes, calcular a média das notas dos usuários e armazenar os dados em um arquivo JSON. Ele inclui um formulário, página de sucesso e funcionalidades auxiliares como a verificação de planos e mensagens baseadas no ano de lançamento dos filmes.
+
+📁 Estrutura do Projeto
+
+/screen-match
+├── index.html          # Formulário de inserção de dados do filme
+├── index.php           # Lógica principal de manipulação e inserção dos dados
+├── exporta-arquivo.php # Processa e armazena os dados no arquivo JSON
+├── sucesso.php         # Página de confirmação do sucesso da inserção
+├── style.css           # Estilos gerais para o formulário
+├── style-sucesso.css   # Estilos específicos para a página de sucesso
+├── filme.json          # Arquivo que armazena os filmes cadastrados
+├── importar.php        # Exibe o conteúdo do arquivo JSON
+└── src/
+    └── funcoes.php     # Funções auxiliares para exibição de mensagens e manipulação dos filmes
+
+🚀 Funcionalidades
+Cadastro de Filmes: Permite ao usuário cadastrar filmes informando o nome, ano de lançamento, nota e gênero.
+
+Cálculo da Média das Notas: A média das notas dos filmes é calculada e exibida para o usuário.
+
+Exibição de Mensagens: O sistema exibe mensagens baseadas no ano de lançamento do filme:
+
+📅 Filme recente (lançamento após 2022)
+
+🎬 Filme novo (lançamento entre 2020 e 2022)
+
+🕰️ Filme antigo (lançamento antes de 2020)
+
+Verificação de Planos: Verifica se o filme está incluído em um plano premium, baseado no ano de lançamento.
+
+Armazenamento de Dados: Os dados dos filmes são armazenados em um arquivo JSON (filme.json), garantindo a persistência dos dados.
+
+Feedback ao Usuário: Após o cadastro, uma página de sucesso é exibida, confirmando que o filme foi inserido com sucesso.
+
+📝 Descrição dos Arquivos
+index.html
+Formulário simples para o cadastro dos filmes, com campos para o nome do filme, ano de lançamento, nota e gênero.
+
+index.php
+Arquivo PHP que processa os dados enviados pelo formulário, calcula a média das notas e salva os dados no arquivo filme.json. Também exibe o gênero do filme com base no nome e chama funções auxiliares para exibir mensagens sobre o lançamento.
+
+exporta-arquivo.php
+Este script processa os dados do formulário e os armazena em um arquivo JSON. Ele garante que os dados sejam persistidos corretamente.
+
+sucesso.php
+Página que é exibida após o cadastro de um filme, confirmando que os dados foram inseridos com sucesso.
+
+style.css
+Estilos gerais para o formulário de cadastro de filmes, proporcionando uma aparência limpa e moderna.
+
+style-sucesso.css
+Estilos específicos para a página de sucesso, com um fundo verde de sucesso e um botão de retorno ao formulário.
+
+filme.json
+Arquivo JSON onde os dados dos filmes cadastrados são armazenados. Ele é atualizado a cada novo filme inserido.
+
+importar.php
+Este arquivo permite visualizar o conteúdo do arquivo filme.json, exibindo os filmes cadastrados até o momento.
+
+src/funcoes.php
+Contém funções auxiliares que são utilizadas em index.php para exibir mensagens baseadas no ano de lançamento do filme e para criar o array de dados do filme.
