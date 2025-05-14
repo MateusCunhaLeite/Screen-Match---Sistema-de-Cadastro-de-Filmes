@@ -1,3 +1,9 @@
+
+🚧 Projeto em desenvolvimento 🚧  
+Este projeto ainda está em andamento e pode sofrer alterações frequentes.
+
+
+
 Este projeto é um sistema simples em PHP para cadastrar filmes, calcular a média das notas dos usuários e armazenar os dados em um arquivo JSON. Ele inclui um formulário, página de sucesso e funcionalidades auxiliares como a verificação de planos e mensagens baseadas no ano de lançamento dos filmes.
 
 📁 Estrutura do Projeto
